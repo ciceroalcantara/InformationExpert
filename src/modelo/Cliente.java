@@ -44,9 +44,10 @@ public class Cliente {
 		Iterator<Aluguel> alugueis = fitasAlugadas.iterator();
 		while (alugueis.hasNext()) {
 			Aluguel cada = (Aluguel) alugueis.next();
-			total += cada.valor_cada_aluguel();
+			total = total + cada.valor_cada_aluguel();
 		}
-		return total();
+		return total;
+		
 		
 	}
 	private int getPontosDeAlugadorFrequenteTotal() {
@@ -55,9 +56,9 @@ public class Cliente {
 		Iterator<Aluguel> alugueis = fitasAlugadas.iterator();
 		while(alugueis.hasNext()) {
 			Aluguel cada = (Aluguel)alugueis.next();
-			pontos += cada.getPontosDeAlugadorFrequente();
+			pontos = pontos + cada.getPontosDeAlugadorFrequente();
 		}
-			return pontos();
+			return pontos;
 	}
 }
 	

@@ -12,6 +12,7 @@ public class Locadora {
 		Cliente cliente = new Cliente("Cicero Moura de Alcantara");
 		
 		cliente.adicionaAluguel (new Aluguel(new Fita("Vingadores", Tipo.lancamento), 5));
+		cliente.adicionaAluguel (new Aluguel(new Fita("Titanic", Tipo.normal), 10));
 
 	    System.out.println(cliente.extrato());
 	}
